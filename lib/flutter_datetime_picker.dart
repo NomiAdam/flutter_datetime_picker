@@ -378,7 +378,11 @@ class _DatePickerState extends State<DatePickerComponent> {
             onSelectedItemChanged: (int index) {
               selectedChangedWhenScrolling(index);
             },
-            useMagnifier: true,
+            squeeze: theme.squeeze ?? 1.45,
+            magnification: theme.magnification ?? 1,
+            useMagnifier: theme.useMagnifier ?? true,
+            diameterRatio: theme.diameterRatio ?? 1.1,
+            offAxisFraction: theme.offAxisFraction ?? 0,
             selectionOverlay: theme.selectionOverlay,
             itemBuilder: (BuildContext context, int index) {
               final content = stringAtIndexCB(index);

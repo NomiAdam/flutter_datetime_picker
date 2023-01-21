@@ -10,6 +10,11 @@ class DatePickerTheme with DiagnosticableTreeMixin {
   final Color backgroundColor;
   final Color? headerColor;
   final Widget? selectionOverlay;
+  final double? squeeze;
+  final double? magnification;
+  final bool? useMagnifier;
+  final double? diameterRatio;
+  final double? offAxisFraction;
 
   final double containerHeight;
   final double titleHeight;
@@ -22,6 +27,11 @@ class DatePickerTheme with DiagnosticableTreeMixin {
     this.backgroundColor = Colors.white,
     this.headerColor,
     this.selectionOverlay,
+    this.squeeze,
+    this.magnification,
+    this.useMagnifier = true,
+    this.diameterRatio,
+    this.offAxisFraction,
     this.containerHeight = 210.0,
     this.titleHeight = 44.0,
     this.itemHeight = 36.0,
