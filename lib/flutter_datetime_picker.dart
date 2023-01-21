@@ -33,7 +33,7 @@ class DatePicker {
   }) async {
     return await Navigator.push(
       context,
-      _DatePickerRoute(
+      DatePickerRoute(
         showTitleActions: showTitleActions,
         onChanged: onChanged,
         onConfirm: onConfirm,
@@ -68,7 +68,7 @@ class DatePicker {
   }) async {
     return await Navigator.push(
       context,
-      _DatePickerRoute(
+      DatePickerRoute(
         showTitleActions: showTitleActions,
         onChanged: onChanged,
         onConfirm: onConfirm,
@@ -101,7 +101,7 @@ class DatePicker {
   }) async {
     return await Navigator.push(
       context,
-      _DatePickerRoute(
+      DatePickerRoute(
         showTitleActions: showTitleActions,
         onChanged: onChanged,
         onConfirm: onConfirm,
@@ -135,7 +135,7 @@ class DatePicker {
   }) async {
     return await Navigator.push(
       context,
-      _DatePickerRoute(
+      DatePickerRoute(
         showTitleActions: showTitleActions,
         onChanged: onChanged,
         onConfirm: onConfirm,
@@ -169,7 +169,7 @@ class DatePicker {
   }) async {
     return await Navigator.push(
       context,
-      _DatePickerRoute(
+      DatePickerRoute(
         showTitleActions: showTitleActions,
         onChanged: onChanged,
         onConfirm: onConfirm,
@@ -184,8 +184,8 @@ class DatePicker {
   }
 }
 
-class _DatePickerRoute<T> extends PopupRoute<T> {
-  _DatePickerRoute({
+class DatePickerRoute<T> extends PopupRoute<T> {
+  DatePickerRoute({
     this.showTitleActions,
     this.onChanged,
     this.onConfirm,
@@ -257,7 +257,7 @@ class DatePickerComponent extends StatefulWidget {
 
   final DateChangedCallback? onChanged;
 
-  final _DatePickerRoute route;
+  final DatePickerRoute route;
 
   final LocaleType? locale;
 
