@@ -379,6 +379,7 @@ class _DatePickerState extends State<DatePickerComponent> {
               selectedChangedWhenScrolling(index);
             },
             useMagnifier: true,
+            selectionOverlay: theme.selectionOverlay,
             itemBuilder: (BuildContext context, int index) {
               final content = stringAtIndexCB(index);
               if (content == null) {
