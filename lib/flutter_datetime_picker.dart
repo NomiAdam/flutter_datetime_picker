@@ -292,6 +292,12 @@ class _DatePickerState extends State<DatePickerComponent> {
   @override
   Widget build(BuildContext context) {
     DatePickerTheme theme = widget.route.theme;
+    if (widget.route.animation == null) {
+      return Material(
+        color: theme.backgroundColor,
+        child: _renderPickerView(theme),
+      );
+    }
     return GestureDetector(
       child: AnimatedBuilder(
         animation: widget.route.animation!,
